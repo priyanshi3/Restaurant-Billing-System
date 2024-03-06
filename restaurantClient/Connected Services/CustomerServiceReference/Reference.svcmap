@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="01ac0e4d-7ac3-4086-b718-b01e71b7be1a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/customerService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="customerService.xsd" MetadataType="Schema" ID="d5d41e24-9eb4-43ca-96a8-4b24fe182c63" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/customerService?xsd=xsd2" />
+    <MetadataFile FileName="customerService1.xsd" MetadataType="Schema" ID="97e934fa-442c-4fd4-84f3-955f45163b1e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/customerService?xsd=xsd3" />
+    <MetadataFile FileName="customerService.disco" MetadataType="Disco" ID="3ec8d7d8-2492-49f2-91e0-dd61480a3124" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/customerService?disco" />
+    <MetadataFile FileName="customerService2.xsd" MetadataType="Schema" ID="638b00bf-2fc8-4e42-9e2f-fcc22119d9d6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/customerService?xsd=xsd0" />
+    <MetadataFile FileName="customerService.wsdl" MetadataType="Wsdl" ID="7b76eaad-8a4e-4ab9-812c-97cecf9255b5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/customerService?wsdl" />
+    <MetadataFile FileName="customerService3.xsd" MetadataType="Schema" ID="7bd64e3f-1b57-402b-b979-4fd9674acfc5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/customerService?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

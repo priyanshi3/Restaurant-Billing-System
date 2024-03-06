@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="7c6dd77b-f498-4a82-af09-ef168e6716f1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/billService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="billService.xsd" MetadataType="Schema" ID="69913fe7-1a88-42c1-9622-3f2de800653d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/billService?xsd=xsd2" />
+    <MetadataFile FileName="billService.disco" MetadataType="Disco" ID="a055c477-b538-40b6-aa9a-c2b26eaf9234" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/billService?disco" />
+    <MetadataFile FileName="billService1.xsd" MetadataType="Schema" ID="3d0da5c9-2c37-40b7-866e-d4dc06b31fa8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/billService?xsd=xsd0" />
+    <MetadataFile FileName="billService.wsdl" MetadataType="Wsdl" ID="01019eb2-89c6-4848-8618-fa8d7adcdf7f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/billService?wsdl" />
+    <MetadataFile FileName="billService2.xsd" MetadataType="Schema" ID="68c7ef76-de4f-4c5d-a7ee-aa690b3e8414" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/billService?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

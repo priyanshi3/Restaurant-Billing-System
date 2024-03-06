@@ -1,0 +1,7 @@
+E:\WSD project\ItemService\bin\Debug\ItemService.dll.config
+E:\WSD project\ItemService\bin\Debug\ItemService.dll
+E:\WSD project\ItemService\bin\Debug\ItemService.pdb
+E:\WSD project\ItemService\obj\Debug\ItemService.csproj.AssemblyReference.cache
+E:\WSD project\ItemService\obj\Debug\ItemService.csproj.CoreCompileInputs.cache
+E:\WSD project\ItemService\obj\Debug\ItemService.dll
+E:\WSD project\ItemService\obj\Debug\ItemService.pdb

@@ -1,0 +1,7 @@
+E:\WSD project\CustomerService\bin\Debug\CustomerService.dll.config
+E:\WSD project\CustomerService\bin\Debug\CustomerService.dll
+E:\WSD project\CustomerService\bin\Debug\CustomerService.pdb
+E:\WSD project\CustomerService\obj\Debug\CustomerService.csproj.AssemblyReference.cache
+E:\WSD project\CustomerService\obj\Debug\CustomerService.csproj.CoreCompileInputs.cache
+E:\WSD project\CustomerService\obj\Debug\CustomerService.dll
+E:\WSD project\CustomerService\obj\Debug\CustomerService.pdb

@@ -1,0 +1,7 @@
+E:\WSD project\BillService\bin\Debug\BillService.dll.config
+E:\WSD project\BillService\bin\Debug\BillService.dll
+E:\WSD project\BillService\bin\Debug\BillService.pdb
+E:\WSD project\BillService\obj\Debug\BillService.csproj.AssemblyReference.cache
+E:\WSD project\BillService\obj\Debug\BillService.csproj.CoreCompileInputs.cache
+E:\WSD project\BillService\obj\Debug\BillService.dll
+E:\WSD project\BillService\obj\Debug\BillService.pdb

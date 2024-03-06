@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="billService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/billService?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/billService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/billService?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="billInterface_AddBill_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBill" />
+  </wsdl:message>
+  <wsdl:message name="billInterface_AddBill_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBillResponse" />
+  </wsdl:message>
+  <wsdl:message name="billInterface_GetBills_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBills" />
+  </wsdl:message>
+  <wsdl:message name="billInterface_GetBills_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBillsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="billInterface">
+    <wsdl:operation name="AddBill">
+      <wsdl:input wsaw:Action="http://tempuri.org/billInterface/AddBill" message="tns:billInterface_AddBill_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/billInterface/AddBillResponse" message="tns:billInterface_AddBill_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBills">
+      <wsdl:input wsaw:Action="http://tempuri.org/billInterface/GetBills" message="tns:billInterface_GetBills_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/billInterface/GetBillsResponse" message="tns:billInterface_GetBills_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_billInterface" type="tns:billInterface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddBill">
+      <soap:operation soapAction="http://tempuri.org/billInterface/AddBill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBills">
+      <soap:operation soapAction="http://tempuri.org/billInterface/GetBills" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="billService">
+    <wsdl:port name="BasicHttpBinding_billInterface" binding="tns:BasicHttpBinding_billInterface">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/billService/billService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
