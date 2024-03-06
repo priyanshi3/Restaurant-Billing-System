@@ -2,8 +2,8 @@
 
 The Restaurant Billing System is a WCF-Service-based system that digitally maintains customers and their bills.
 We have made 
-    - CustomerService (for handling customer-related tasks)
-    + ItemService  (for handling menu items-related tasks)
+    - CustomerService (for handling customer-related tasks)__
+    + ItemService  (for handling menu items-related tasks)<br/>
     + BillService  (for handling billing tasks)
     + restaurnatHost 
     + restaurantClient
