@@ -17,10 +17,12 @@ namespace restaurantClient
             if (rblAction.Text == "Insert")
             {
                 gvItemsData.Visible = false;
+                btnAdd.Text = "Add";
             }
             else
             {
                 gvItemsData.Visible = true;
+                btnAdd.Text = "Update";
             }
         }
 
@@ -38,10 +40,16 @@ namespace restaurantClient
             if(rblAction.Text == "Insert")
             {
                 gvItemsData.Visible = false;
+                btnAdd.Text = "Add";
+                txtItemName.Text = "";
+                txtItemPrice.Text = "";
             }
             else
             {
                 gvItemsData.Visible = true;
+                btnAdd.Text = "Update";
+                txtItemName.Text = "";
+                txtItemPrice.Text = "";
             }
         }
         
@@ -72,8 +80,8 @@ namespace restaurantClient
                 showGridData();
                 lblMessage.Text = "Data Updated Successfully";
             }
-            txtItemName.Text = "";
-            txtItemPrice.Text = "";
+            /*txtItemName.Text = "";
+            txtItemPrice.Text = "";*/
         }
     }
 }

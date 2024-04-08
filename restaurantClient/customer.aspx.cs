@@ -21,8 +21,8 @@ namespace restaurantClient
             addCust.AddCustomer(txtCustName.Text, long.Parse(txtCustPhnNo.Text));
             addCust.Close();
             lblMessage.Text = "Customer added successfully";
-            txtCustName.Text = "";
-            txtCustPhnNo.Text = "";
+            /*txtCustName.Text = "";
+            txtCustPhnNo.Text = "";*/
         }
     }
 }

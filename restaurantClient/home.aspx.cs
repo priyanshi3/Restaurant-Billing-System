@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -62,8 +63,8 @@ namespace restaurantClient
                 restaurantClient.CustomerServiceReference.customerInterfaceClient("BasicHttpBinding_customerInterface");
             restaurantClient.CustomerServiceReference.Customer customer = 
                 cust.GetCustByPhn(long.Parse(txtcust.Text));
-
-            if (customer != null)
+            lblBill.Text = customer.CustId.ToString();
+            if (customer.CustId > 0)
             {
                 int total_amount = 0;
                 string total_items = "";
@@ -78,17 +79,30 @@ namespace restaurantClient
                     total_items = total_items + ", ";
                     total_amount = total_amount + int.Parse(item.Text.Split('-').Last());
                 }
-                lblBill.Text = "Total Amount to pay = " + total_amount.ToString();
+                if(total_items != "") 
+                {
+                    lblBill.Text = "Total Amount to pay = " + total_amount.ToString();
+                    lblBill.ForeColor = System.Drawing.Color.DarkBlue;
 
-                restaurantClient.BillServiceReference.billInterfaceClient bill = new
-                    restaurantClient.BillServiceReference.billInterfaceClient("BasicHttpBinding_billInterface");
-                bill.AddBill(customer.CustId, total_items, total_amount, DateTime.Now);
-                bill.Close();
-                txtAmount.Text = "";
-                txtcust.Text = "";
-                txtItemName.Text = "";
-                lblQuantity.Text = "0";
-                lbBillItems.Items.Clear();
+                    restaurantClient.BillServiceReference.billInterfaceClient bill = new
+                        restaurantClient.BillServiceReference.billInterfaceClient("BasicHttpBinding_billInterface");
+                    bill.AddBill(customer.CustId, total_items, total_amount, DateTime.Now);
+                    bill.Close();
+                    /*txtAmount.Text = "";
+                    txtcust.Text = "";
+                    txtItemName.Text = "";
+                    lblQuantity.Text = "0";
+                    lbBillItems.Items.Clear();*/
+                }
+                else
+                {
+                    lblBill.Text = "Select Items first";
+                    lblBill.ForeColor = System.Drawing.Color.Red;
+                }
+            }
+            else
+            {
+                Response.Redirect("customer.aspx");
             }
             
         }
